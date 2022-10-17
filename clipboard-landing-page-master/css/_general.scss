@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $regular-text;
+  font-weight: $light-text;
+  color: $light-gray;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: $bold-text;
+  color: $dark-gray;
+}
+
+main {
+  padding: 4rem 3rem;
+  margin-bottom: 4rem;
+  @media(min-width: $desktop){
+    width: 50%;
+    margin: auto;
+  }
+}
+
+// Buttons
+
+.section__button {
+  display: flex;
+  flex-direction: column;
+  @include center-content;
+  gap: 1rem;
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+button {
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: $bold-text;
+  width: auto;
+}
+
+.btn__cyan {
+  background-color: $strong-cyan;
+}
+
+.btn__blue {
+  background-color: $light-blue;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

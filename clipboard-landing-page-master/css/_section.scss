@@ -1,0 +1,15 @@
+.section {
+  &__img {
+    display: flex;
+    margin: 4rem 0;
+    @include center-content;
+
+    &--pc {
+      width: 90vw;
+    }
+
+    &--devices {
+      width: 90vw;
+    }
+  }
+}

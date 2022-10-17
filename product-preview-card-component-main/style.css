@@ -58,7 +58,7 @@ h5{
 main{
   background-color: var(--white);
   border-radius: 10px;
-  width: 30vw;
+  width: 40vw;
 }
 
 .product__container{
@@ -125,10 +125,11 @@ cursor: pointer;
 }
 
 
-@media (max-width: 1440px){
+@media only screen and (max-width: 980px){
 
   main{
     width: 90vw;
+    min-width: 320px;
   }
 
   .product__container{
@@ -140,6 +141,7 @@ cursor: pointer;
   .product__img{
     background-image: url("images/image-product-mobile.jpg");
     height: 30vh;
+    min-width: 336px;
     border-radius: 10px 10px 0 0;
   }
 
